@@ -1,0 +1,20 @@
+{
+  "name": "acf-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "aws s3 sync . s3://test.getautoclicker.com/ --delete --exclude \"package.json\" --exclude \"LICENSE\" --exclude \"README.md\" --exclude \".git\\*\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhruv-Techapps/acf-test.git"
+  },
+  "author": "Dharmesh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhruv-Techapps/acf-test/issues"
+  },
+  "homepage": "https://github.com/Dhruv-Techapps/acf-test#readme"
+}
