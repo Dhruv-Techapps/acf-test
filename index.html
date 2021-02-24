@@ -15,14 +15,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/assets/prism/prism.css">
   <link rel="stylesheet" href="/assets/prism/prism-support.css">
+  <link rel="stylesheet" href="/assets/styles/main.css">
   <!-- Favicons -->
-  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png.png" sizes="128x128">
-  <link rel="icon" href="/assets/favicons/icon32.png" type="image/png" sizes="32x32">
-  <link rel="icon" href="/assets/favicons/icon16.png" type="image/png" sizes="16x16">
-  <link rel="icon" href="/assets/favicons/android-chrome-192x192.png" type="image/png" sizes="192x192">
-  <link rel="icon" href="/assets/favicons/android-chrome-512x512.png" type="image/png" sizes="512x512">
-  <link rel="manifest" href="/assets/favicons/manifest.json">
-  <link rel="icon" href="/assets/favicons/favicon.ico">
+  <link rel="apple-touch-icon" href="https://getautoclicker.com/favicons/apple-touch-icon.png.png" sizes="128x128">
+  <link rel="icon" href="https://getautoclicker.com/favicons/icon32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="https://getautoclicker.com/favicons/icon16.png" type="image/png" sizes="16x16">
+  <link rel="icon" href="https://getautoclicker.com/favicons/android-chrome-192x192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="https://getautoclicker.com/favicons/android-chrome-512x512.png" type="image/png" sizes="512x512">
+  <link rel="manifest" href="https://getautoclicker.com/favicons/manifest.json">
+  <link rel="icon" href="https://getautoclicker.com/favicons/favicon.ico">
   <title>Test | Auto click / Auto Fill</title>
   <meta name="description"
     content="Fill input field or click button or link anything anywhere. easy configure in few steps and work like PRO Auto click / Auto fill is chrome extension developed with HTML, CSS, Javascript. Quickly configure your job using XPath and work like PRO.." />
@@ -37,7 +38,7 @@
   <header class="navbar navbar-expand-md navbar-dark bd-navbar">
     <nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation">
       <a class="navbar-brand p-0 mr-2" href="/" aria-label="Home">
-        A
+        <img src="https://getautoclicker.com/favicons/favicon32.png" width="30" height="30">
       </a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bdNavbar"
@@ -127,21 +128,13 @@
 
   <div class="container-fluid">
     <div class="d-flex mb-5 align-items-center">
-      <div class="flex-fill">
         <ins class="adsbygoogle"
           style="display:block"
           data-ad-client="ca-pub-9512495707028343"
           data-ad-slot="2065824748"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-      </div>
-      <div class="flex-fill">
-        <h1 class="bd-title">Speed Test</h1>
-        <div class="d-flex">
-          <button class="btn btn-lg btn-primary p-5" id="speed-test">CLICK ME <span class="badge bg-warning text-dark ml-5">0</span></button>
-        </div>
-      </div>
-    </div>   
+    </div>
 
     <h1 class="bd-title">Practice form</h1>
     <p class=>
@@ -671,10 +664,39 @@
         </tr>
       </tbody>
     </table>
+    <h3>Speed Test</h3>
+    <div class="d-flex justify-content-center mb-3">
+      <button class="btn btn-lg btn-light border" id="speed-test">
+        CLICK ME 
+        <span class="badge bg-warning text-dark ml-5">0</span>
+      </button>
+    </div>
+    <h3>IFrame</h3>
+    <table class="table sm">
+      <thead>
+        <tr>
+          <th scope="col" width="50%">Iframe without src</th>
+          <th scope="col">Iframe with src</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <pre class="language-html"><code>&lt;iframe id="iframe-without-src" /></code></pre>
+            <iframe id="iframe-without-src" width="100%" height="300px"></iframe>
+          </td>
+          <td>
+            <pre class="language-html"><code>&lt;iframe src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/Forms/Your_first_form/Example/_samples_/A_simple_form" /></code></pre>
+            <iframe id="iframe-with-src" src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/Forms/Your_first_form/Example/_samples_/A_simple_form" width="100%" height="300px"></iframe>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </div>
   <script src="/assets/scripts/events.js"></script>
   <script src="/assets/prism/prism.js"></script>
   <script src="/assets/scripts/xpath-formatter.js"></script>
+  <script src="/assets/scripts/iframe.js"></script>
   
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>

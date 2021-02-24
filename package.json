@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+	"start":"serve",
     "deploy": "aws s3 sync . s3://test.getautoclicker.com/ --delete --exclude \"package.json\" --exclude \"LICENSE\" --exclude \"README.md\" --exclude \".git\\*\""
   },
   "repository": {
