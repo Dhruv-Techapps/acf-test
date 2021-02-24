@@ -92,4 +92,6 @@ function myFunction() {
 }
 </script>
 `
-document.querySelector('#iframe-without-src').contentDocument.write(iframeContent)
+var doc = document.querySelector('#iframe-without-src').contentDocument;
+doc.write(iframeContent);
+doc.close();
