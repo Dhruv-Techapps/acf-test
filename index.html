@@ -467,15 +467,48 @@
           </tr>
           <tr>
             <td>
-              <button type="button" class="btn btn-success" onclick="alert('Hello World!')">Click Me!</button>
+              <button type="button" class="btn btn-success" alert onclick="alert('Hello World!')">Click Me! (Alert)</button>
             </td>
             <td>
               <pre
-                   class="language-html"><code>&lt;button type="button" onclick="alert('Hello World!')">Click Me!&lt;/button></code></pre>
+                   class="language-html"><code>&lt;button type="button" alert onclick="alert('Hello World!')">Click Me!&lt;/button></code></pre>
             </td>
             <td>
               <ul class="xpath">
                 <li>//button[@type="button"]</li>
+                <li>//button[@alert]</li>
+                <li>//button[@onclick]</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn btn-danger" console onclick="javascript:console.log('Hello World!')">Click Me! (Console Hello World)</button>
+            </td>
+            <td>
+              <pre
+                   class="language-html"><code>&lt;button type="button" console onclick="console.log('Hello World!')">Click Me!&lt;/button></code></pre>
+            </td>
+            <td>
+              <ul class="xpath">
+                <li>//button[@type="button"]</li>
+                <li>//button[@console]</li>
+                <li>//button[@onclick]</li>
+              </ul>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="btn btn-warning" random  onclick="javascript:console.log(Math.floor(Math.random() * 100))">Click Me! (Console Random)</button>
+            </td>
+            <td>
+              <pre
+                   class="language-html"><code>&lt;button type="button" random onclick="console.log('Random integer from 0 to 99 ')">Click Me!&lt;/button></code></pre>
+            </td>
+            <td>
+              <ul class="xpath">
+                <li>//button[@type="button"]</li>
+                <li>//button[@random]</li>
                 <li>//button[@onclick]</li>
               </ul>
             </td>
@@ -483,7 +516,6 @@
         </tbody>
       </table>
     </form>
-    <hr />
     <div align="center">
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
       <!-- test.getautoclicker.com -->
@@ -759,9 +791,9 @@
           </td>
           <td>
             <pre
-                 class="language-html"><code>&lt;iframe src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/Forms/Your_first_form/Example/_samples_/A_simple_form" /></code></pre>
+                 class="language-html"><code>&lt;iframe src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/Forms/Your_first_form/Example/_sample_.A_simple_form.html" /></code></pre>
             <iframe id="iframe-with-src"
-                    src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/Forms/Your_first_form/Example/_samples_/A_simple_form"
+                    src="https://yari-demos.prod.mdn.mozit.cloud/en-US/docs/Learn/Forms/Your_first_form/Example/_sample_.A_simple_form.html"
                     width="100%" height="300px"></iframe>
           </td>
         </tr>
