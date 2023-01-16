@@ -1,6 +1,6 @@
 let speedTestCount = 0
-let speedTestTarget = $("#speed-test span");
-$("#speed-test").on('click',() => {
+let speedTestTarget = document.querySelector("#speed-test span");
+document.getElementById("speed-test").addEventListener('click',() => {
   speedTestCount++;
-  speedTestTarget.text(speedTestCount)
+  speedTestTarget.innerHTML = speedTestCount
 })
