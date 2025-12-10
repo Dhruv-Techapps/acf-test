@@ -61,7 +61,7 @@
           document.cookie = nm + "=;path=" + pa + ";domain=" + dm +
             ";expires=" + new Date(0).toUTCString();
       }
-    } finally { }
+    } catch (e) { }
   </script>
   <script src="./assets/scripts/color-modes.js"></script>
 </head>
