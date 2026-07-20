@@ -968,6 +968,21 @@
     </script>
     <h3>Content Editable</h3>
     <div id="content-editable" contenteditable="true" class="border rounded p-3 mb-3">editable</div>
+    <h3>Embedded Frame</h3>
+    <p>Src-less iframe for testing <code>checkiFrames</code> and iframe-first settings.</p>
+    <iframe id="test-iframe" title="test iframe" class="border rounded mb-3" style="width: 100%; height: 80px"></iframe>
+    <script>
+      document.getElementById('test-iframe').contentDocument.body.innerHTML =
+        '<input type="text" id="iframe-input" placeholder="iframe input" />'
+    </script>
+    <h3>Event Recorder</h3>
+    <p>Records touch and key events into <code>data-*</code> attributes.</p>
+    <button id="event-recorder" type="button" class="btn btn-outline-primary mb-3">Event Recorder</button>
+    <script>
+      const recorder = document.getElementById('event-recorder')
+      recorder.addEventListener('touchstart', () => recorder.setAttribute('data-touchstart', 'true'))
+      recorder.addEventListener('keydown', (e) => recorder.setAttribute('data-keydown', e.key))
+    </script>
   </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
